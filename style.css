@@ -1,19 +1,36 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: #555;
 }
 
+/* Navigation */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 40px;
-  background-color: white;
+  background-color: #ffffff;
   border-bottom: 2px solid #e1e1e1;
+}
+
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo img {
   height: 50px;
+}
+
+.school-name {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
 }
 
 .menu a {
@@ -24,7 +41,7 @@ body {
 }
 
 .menu a:hover {
-  color: #d0006f;
+  color: #cdd000;
 }
 
 .icons .icon {
@@ -32,16 +49,57 @@ body {
   margin-left: 15px;
   cursor: pointer;
 }
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.school-name {
-  margin-top: 5px;
-  font-weight: bold;
-  font-size: 16px;
-  color: #333;
+.login-form {
+  width: 300px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form input[type="submit"] {
+  width:100%;
+  padding: 10px;
+  background-color: #d4af37;
+  color: rgb(32, 29, 29);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.login-form input[class=login-button] {
+  width:100%;
+  padding: 10px;
+  background-color: #d4af37;
+  color: rgb(32, 29, 29);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #b9982e; 
+}
+.login-form input[img]{
+  width: 200px;
+}
+.menu a.active {
+  color: #cdd000;
+  font-weight: bold;
+  border-bottom: 2px solid #cdd000;
+}
+
