@@ -4,14 +4,15 @@ body {
   background-color: #555;
 }
 
-/* Navigation */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 40px;
-  background-color: #ffffff;
-  border-bottom: 2px solid #e1e1e1;
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between logo and menu */
+  padding: 10px 40px; /* Padding around navbar */
+  background-color: #ffffff; /* White background */
+  border-bottom: 2px solid #e1e1e1; /* Bottom border */
+  position: relative; /* Ensure proper positioning */
+  z-index: 1000; /* Bring navbar to the front */
 }
 
 
@@ -53,7 +54,7 @@ body {
   width: 300px;
   margin: 80px auto;
   padding: 30px;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -102,4 +103,163 @@ body {
   font-weight: bold;
   border-bottom: 2px solid #cdd000;
 }
+.copy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+/* تحسين للـ container */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* تصميم الكروت الداخلية */
+.card {
+  background-color: #f9f9f9;
+  border-left: 5px solid #d4af37;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card p, .card ul {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* التأثير على الـ menu عند الـ hover */
+.menu a:hover {
+  color: #d4af37;
+  text-decoration: underline;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* تحسين للـ page title */
+.page-title {
+  text-align: center;
+  color: #d4af37;
+  font-size: 28px;
+  margin-top: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* تحسين شكل الروابط */
+.menu a.active {
+  color: #d4af37;
+  font-weight: bold;
+  border-bottom: 2px solid #d4af37;
+}
+/* تخصيص الصورة في الـheader */
+.header-img {
+  display: flex;
+  justify-content: center; /* وضع الصورة في الوسط */
+  align-items: center; /* لضمان محاذاة الصورة بشكل عمودي */
+  margin: 20px 0; /* إضافة بعض المسافة حول الصورة */
+}
+
+.header-img img {
+  height: 300px; 
+  width: auto; 
+  object-fit: cover; 
+  border-radius: 10px; 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.social-links {
+  margin: 20px 0;
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+}
+
+.social-links h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+}
+
+.social-icon:hover {
+  color: #cdd000;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: grey;
+  margin: 0;
+  padding: 20px;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #d4af37; /* Gold color */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.submit-button:hover {
+  background-color: #b9982e; /* Darker gold on hover */
+}
+
 
