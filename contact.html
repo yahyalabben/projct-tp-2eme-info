@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تواصل معنا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/dar-lamen.png" alt="Logo Lycée">
+            <span class="school-name">معهد دار الأمان بالقيروان</span>
+        </div>
+        <nav class="menu">
+            <a href="index.html">MENU</a>
+            <a href="about.html">À PROPOS DE NOUS</a>
+            <a href="contact.html" class="active">NOUS CONTACTER</a>
+            <a href="login.html">LOGIN</a>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <h2>Formulaire de Contact</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="role">Je suis :</label>
+            <select id="role" name="role" required>
+                <option value="eleve">Un Élève</option>
+                <option value="professeur">Un Professeur</option>
+            </select>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telephone">Numéro de Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required pattern="[0-9]*" placeholder="Ex: 123456789" inputmode="numeric">
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Envoyer" class="submit-button">
+        </form>
+    </div>
+
+    <div class="social-links">
+        <h3>تواصل معنا:</h3>
+        <a href="https://www.facebook.com/profile.php?id=61550195212964" class="social-icon" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://www.youtube.com/@lyceedarlamenkairouan2534" class="social-icon" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i> Youtube
+        </a>
+        <a href="tel:+21677272061" class="social-icon" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-phone"></i> +216 77 272 061
+        </a>
+    </div>
+</body>
+</html>
