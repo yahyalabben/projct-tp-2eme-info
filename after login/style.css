@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #555;
+}
+
+.navbar {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  background-color: #ffffff; 
+  border-bottom: 2px solid #e1e1e1; 
+  position: relative; 
+  z-index: 1000; 
+}
+
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.school-name {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #cdd000;
+}
+
+.icons .icon {
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.login-form {
+  width: 300px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 8px; /* Reduced padding */
+  margin: 8px 0; /* Reduced margin */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form input[type="submit"],
+.login-form input[class=login-button] {
+  width: 100%;
+  padding: 8px; /* Reduced padding */
+  background-color: #d4af37;
+  color: rgb(32, 29, 29);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #b9982e; 
+}
+
+.login-form input[img] {
+  width: 200px;
+}
+.menu a.active {
+  color: #cdd000;
+  font-weight: bold;
+  border-bottom: 2px solid #cdd000;
+}
+.copy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+.card {
+  background-color: #f9f9f9;
+  border-left: 5px solid #d4af37;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card p, .card ul {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.menu a:hover {
+  color: #d4af37;
+  text-decoration: underline;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+.page-title {
+  text-align: center;
+  color: #d4af37;
+  font-size: 28px;
+  margin-top: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.menu a.active {
+  color: #d4af37;
+  font-weight: bold;
+  border-bottom: 2px solid #d4af37;
+}
+.header-img {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin: 20px 0; 
+}
+
+.header-img img {
+  height: 300px; 
+  width: auto; 
+  object-fit: cover; 
+  border-radius: 10px; 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.social-links {
+  margin: 20px 0;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+}
+
+.social-links h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+}
+
+.social-icon:hover {
+  color: #cdd000;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #d4af37; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.submit-button:hover {
+  background-color: #b9982e; 
+}
